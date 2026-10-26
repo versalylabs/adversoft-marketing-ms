@@ -1,0 +1,145 @@
+import { UserRole } from '@/lib/rbac';
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  email: string;
+  role: UserRole;
+  avatar: string;
+  phone: string;
+  title: string;
+  organizationId: string;
+  organizationName: string;
+  isActive: boolean;
+  lastLogin: string;
+  joinedDate: string;
+}
+
+export const INITIAL_USERS: UserProfile[] = [
+  {
+    id: 'usr_super',
+    name: 'Alex Vance',
+    email: 'alex@adversoft.com',
+    role: 'Super Admin',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2831',
+    title: 'Chief Technology Officer',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: 'Just now',
+    joinedDate: 'Jan 15, 2025',
+  },
+  {
+    id: 'usr_admin',
+    name: 'Rachel Adams',
+    email: 'rachel@adversoft.com',
+    role: 'Admin',
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2832',
+    title: 'Managing Director',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: '1 hour ago',
+    joinedDate: 'Feb 01, 2025',
+  },
+  {
+    id: 'usr_sales_mgr',
+    name: 'Marcus Brody',
+    email: 'marcus@adversoft.com',
+    role: 'Sales Manager',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2833',
+    title: 'Head of OOH Sales',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: '3 hours ago',
+    joinedDate: 'Mar 10, 2025',
+  },
+  {
+    id: 'usr_sales_rep',
+    name: 'Lucas Vance',
+    email: 'lucas@adversoft.com',
+    role: 'Sales Agent',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2834',
+    title: 'Senior Account Executive',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: 'Yesterday',
+    joinedDate: 'Apr 05, 2025',
+  },
+  {
+    id: 'usr_campaign_mgr',
+    name: 'Chloe Bennet',
+    email: 'chloe@adversoft.com',
+    role: 'Campaign Manager',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2835',
+    title: 'Campaign Delivery Lead',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: '2 days ago',
+    joinedDate: 'May 12, 2025',
+  },
+  {
+    id: 'usr_ops_mgr',
+    name: 'Elena Rostova',
+    email: 'elena@adversoft.com',
+    role: 'Operations Manager',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2836',
+    title: 'Director of Field Rigging',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: '4 hours ago',
+    joinedDate: 'Mar 01, 2025',
+  },
+  {
+    id: 'usr_finance',
+    name: 'Nathan Drake',
+    email: 'nathan@adversoft.com',
+    role: 'Finance',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2837',
+    title: 'Billing & AR Controller',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: '1 day ago',
+    joinedDate: 'Jun 20, 2025',
+  },
+  {
+    id: 'usr_tech',
+    name: 'Dan Kowalski',
+    email: 'dan@adversoft.com',
+    role: 'Technician',
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (555) 019-2838',
+    title: 'Lead Rigging Technician',
+    organizationId: 'org_apex',
+    organizationName: 'Apex Outdoor Media Group',
+    isActive: true,
+    lastLogin: '30 mins ago',
+    joinedDate: 'Jul 15, 2025',
+  },
+  {
+    id: 'usr_client',
+    name: 'David Sterling',
+    email: 'david@sterlingbrands.com',
+    role: 'Client',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&auto=format&fit=crop&q=80',
+    phone: '+1 (212) 555-0142',
+    title: 'Marketing VP, Sterling Brands',
+    organizationId: 'org_sterling',
+    organizationName: 'Sterling Brands Ltd',
+    isActive: true,
+    lastLogin: '15 mins ago',
+    joinedDate: 'Aug 01, 2025',
+  },
+];

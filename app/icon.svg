@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="adversoftBg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <!-- Screen Bezel / Border Gradient -->
+    <linearGradient id="adversoftBorder" x1="8" y1="8" x2="56" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#C7D2FE" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Billboard Screen Display Gradient -->
+    <linearGradient id="adversoftScreen" x1="10" y1="10" x2="54" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+
+    <!-- Glowing "A" Accent Gradient -->
+    <linearGradient id="adversoftAccent" x1="20" y1="16" x2="44" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="adversoftGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#4338CA" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with Soft Depth -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#adversoftBg)" filter="url(#adversoftGlow)" />
+  
+  <!-- Subtle Inner Border Highlight -->
+  <rect x="3" y="3" width="58" height="58" rx="15" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.5" />
+
+  <!-- Billboard Display Screen Frame -->
+  <rect x="9" y="10" width="46" height="28" rx="5" fill="url(#adversoftScreen)" stroke="url(#adversoftBorder)" stroke-width="2" />
+
+  <!-- Billboard Pillar / Monolith Pole -->
+  <rect x="29" y="38" width="6" height="13" rx="1.5" fill="#E0E7FF" fill-opacity="0.95" />
+  <rect x="32" y="38" width="3" height="13" rx="1" fill="#A5B4FC" fill-opacity="0.85" />
+
+  <!-- Billboard Ground Base Plate -->
+  <rect x="20" y="50" width="24" height="4.5" rx="2.25" fill="#E0E7FF" fill-opacity="0.95" />
+
+  <!-- Illuminated Monogram "A" inside the Billboard Screen -->
+  <path d="M 23 32 L 32 17 L 41 32" stroke="url(#adversoftAccent)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 26.5 27.5 L 37.5 27.5" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Top Broadcast Beacon / Signal Sparkle atop the A apex -->
+  <circle cx="32" cy="17" r="2" fill="#F8FAFC" />
+  <circle cx="32" cy="17" r="3.5" fill="#38BDF8" fill-opacity="0.45" />
+
+  <!-- Digital Display LED Grid Hints in corners -->
+  <circle cx="14" cy="15" r="1" fill="#818CF8" fill-opacity="0.8" />
+  <circle cx="18" cy="15" r="1" fill="#818CF8" fill-opacity="0.8" />
+  <circle cx="46" cy="15" r="1" fill="#818CF8" fill-opacity="0.8" />
+  <circle cx="50" cy="15" r="1" fill="#818CF8" fill-opacity="0.8" />
+</svg>
